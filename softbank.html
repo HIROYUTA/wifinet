@@ -10,7 +10,33 @@
   <meta property="og:description" content="ソフトバンク光のセット割、料金、乗り換え条件を詳しく解説。">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css">
-  <link rel="canonical" href="https://example.com/softbank.html">
+  <link rel="canonical" href="https://hiroyuta.github.io/wifinet/softbank.html">
+
+  <!-- 構造化データ（JSON-LD） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "ソフトバンク光 基本プラン",
+    "description": "SoftBank・Y!mobileユーザー向けの光回線。おうち割 光セットで月額1,100円割引/回線。固定電話オプションの条件を要確認。",
+    "brand": {
+      "@type": "Brand",
+      "name": "ソフトバンク光"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "5720",
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.3",
+      "reviewCount": "287"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -28,6 +54,22 @@
   </header>
 
   <main>
+    <!-- パンくずリスト -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="https://hiroyuta.github.io/wifinet/">
+            <span itemprop="name">ホーム</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">ソフトバンク光</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </nav>
+
     <section class="hero">
       <div class="floating-particles" aria-hidden="true"></div>
       <div class="hero-media" aria-hidden="true">
@@ -250,6 +292,14 @@
   <footer class="footer">
     <p>© 2026 光回線乗り換えナビ</p>
     <p>本サイトは広告を含みます。掲載内容は公開前に公式情報・広告主条件を確認してください。</p>
+    <nav class="footer-nav" style="margin-top: 16px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="index.html">ホーム</a>
+      <a href="guide.html">乗り換えガイド</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="docomo.html">ドコモ光</a>
+      <a href="softbank.html">ソフトバンク光</a>
+      <a href="au.html">auひかり</a>
+    </nav>
   </footer>
 
   <script src="script.js"></script>

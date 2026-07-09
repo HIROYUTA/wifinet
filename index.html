@@ -12,6 +12,90 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/hero-fiber.png">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- 構造化データ（JSON-LD） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "光回線ランキング 2026年7月版",
+    "description": "ドコモ光・ソフトバンク光・auひかりを料金・速度・セット割で徹底比較。工事費完全無料＋最大30,000円キャッシュバック実施中！",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "auひかり home1",
+          "description": "au・UQ mobileユーザー向けの光回線。独自回線エリアでは混雑の影響を受けにくく安定した速度。auスマートバリューで月額1,100円割引/回線。",
+          "brand": {
+            "@type": "Brand",
+            "name": "auひかり"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "3128",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "324"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Product",
+          "name": "ドコモ光 ホーム1ギガ",
+          "description": "ドコモユーザー向けの光回線。NTT光ファイバー設備利用で安定した通信品質。ドコモ光セット割で月額1,100円割引/回線。",
+          "brand": {
+            "@type": "Brand",
+            "name": "ドコモ光"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "3190",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "412"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Product",
+          "name": "ソフトバンク光 基本プラン",
+          "description": "SoftBank・Y!mobileユーザー向けの光回線。おうち割 光セットで月額1,100円割引/回線。固定電話オプションの条件を要確認。",
+          "brand": {
+            "@type": "Brand",
+            "name": "ソフトバンク光"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "3370",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.3",
+            "reviewCount": "287"
+          }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -25,6 +109,8 @@
       <a href="#reviews">ユーザー評価</a>
       <a href="#calculator">料金計算</a>
       <a href="#diagnosis">診断</a>
+      <a href="guide.html">乗り換えガイド</a>
+      <a href="faq.html">FAQ</a>
       <a href="docomo.html" style="color: var(--blue);">ドコモ光</a>
       <a href="softbank.html" style="color: var(--magenta);">ソフトバンク光</a>
       <a href="au.html" style="color: var(--orange);">auひかり</a>
@@ -32,6 +118,18 @@
   </header>
 
   <main id="top">
+    <!-- パンくずリスト -->
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="https://hiroyuta.github.io/wifinet/">
+            <span itemprop="name">ホーム</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+      </ol>
+    </nav>
+
     <section class="hero">
       <div class="floating-particles" aria-hidden="true"></div>
       <div class="hero-media" aria-hidden="true">
@@ -755,6 +853,14 @@
   <footer class="footer">
     <p>© 2026 光回線乗り換えナビ</p>
     <p>本サイトは広告を含みます。掲載内容は公開前に公式情報・広告主条件を確認してください。</p>
+    <nav class="footer-nav" style="margin-top: 16px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="index.html">ホーム</a>
+      <a href="guide.html">乗り換えガイド</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="docomo.html">ドコモ光</a>
+      <a href="softbank.html">ソフトバンク光</a>
+      <a href="au.html">auひかり</a>
+    </nav>
   </footer>
 
   <script src="script.js"></script>

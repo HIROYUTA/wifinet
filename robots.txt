@@ -1,0 +1,16 @@
+# robots.txt for 光回線乗り換えナビ
+
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://hiroyuta.github.io/wifinet/sitemap.xml
+
+# クロール遅延（サーバー負荷軽減）
+Crawl-delay: 1
+
+# 重要ページの優先クロール
+Allow: /index.html
+Allow: /docomo.html
+Allow: /softbank.html
+Allow: /au.html
